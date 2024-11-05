@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "ImagenMedicaMRI",
+    "slug": "ImagenMedicaMRI",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logos/cuadradoiver.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/logos/cuadradoiver.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0B006C"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+ "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSNotificationsUsageDescription": "This app uses notifications to inform you about updates and other relevant information."
+      }
+    },
+
+    "android": {
+      "googleServicesFile": "./google-services.json",
+      "permissions": [
+        "INTERNET"
+      ], 
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logos/cuadradoiver.png",
+        "backgroundColor": "#ffffff" 
+      },
+      "package": "com.nomo89.ImagenMedicaMRI"
+    },
+    
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ]
+    ],
+    "web": {
+      "favicon": "./assets/logos/cuadradoiver.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ad72bbf5-6dfb-4741-9d9e-5abed7df6917"
+      }
+    }
+  }
+}
